@@ -1,0 +1,18 @@
+#Kashif Ahmad kac160230
+
+import zen
+G= zen.Graph()
+G.add_edge(1,2)
+G.add_edge(2,3)
+G.add_edge(2,4)
+G.add_edge(4,3)
+G.add_edge(3,6)
+G.add_edge(3,5)
+G.add_edge(1,5)
+
+
+print ‘#Nodes: %i, #Edges: %i’ % (G.num_nodes,G.num_edges)
+
+print ‘Has 3-4 edge: %s’ % G.has_edge(3,4)
+
+M = G.matrix()
